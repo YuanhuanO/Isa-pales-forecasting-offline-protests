@@ -14,9 +14,9 @@ import pickle
 torchtext.disable_torchtext_deprecation_warning()
 
 # train, val, test，分别包含了整理好的训练、验证和测试数据集
-train = pd.read_csv("train_df.csv")
-val = pd.read_csv("val_df.csv")
-test = pd.read_csv("test_df.csv")
+train = pd.read_csv("data/train_df.csv")
+val = pd.read_csv("data/val_df.csv")
+test = pd.read_csv("data/test_df.csv")
 
 # 标签映射函数
 def map_labels(labels):

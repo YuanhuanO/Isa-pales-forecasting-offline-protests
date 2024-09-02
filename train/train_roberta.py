@@ -38,9 +38,9 @@ class SentimentDataset(Dataset):
         }
 
 # 文本数据和标签, 读取整理好的数据 （0-19）
-train = pd.read_csv("train_df.csv")
-val = pd.read_csv("val_df.csv")
-test = pd.read_csv("test_df.csv")
+train = pd.read_csv("data/train_df.csv")
+val = pd.read_csv("data/val_df.csv")
+test = pd.read_csv("data/test_df.csv")
 
 train_texts = list(train.self_text)
 val_texts = list(val.self_text)
